@@ -1,0 +1,40 @@
+.tabs{float:left;width:254px;background:#191919; border-radius:0 8px 0 0;}
+.tabs>div { position:relative; overflow:hidden;}
+.tabs .tab-content {width:254px;background:#191919;padding-bottom:16px;}
+.tabs .tab-content>p{text-align:right;margin:3px 17px 0 0;}
+.tabs .tab-content>p a{color:#ffffff;font-weight:bold;}
+.tabs .tab-content>p a strong{background: url(/media/images/arrov-tabs-p.png) 0 0 no-repeat;width:3px;height:5px;display:inline-block;
+margin:8px 0  0 1px;}
+.tabs .tab-content>p a:hover{color:#6fa012;}
+.tabs .tab-content>p a:hover strong{background-position:0 bottom;}
+
+.tabs ul.nav {list-style-image:none; display:inline-block;padding-bottom:1px; overflow:hidden;background:#191919; border-radius:0 8px 0 0;}
+
+.tabs ul.nav li {font-size:14px; line-height:17px;background:#191919;
+font-family: Arial, Helvetica, sans-serif;display: inline-block;width:127px;float:left;}
+#last-li-tabs{border-radius:0 8px 0 0;}
+
+.tabs ul.nav li a {color:#fff;display:block;padding:13px 0 14px;text-align:center;}
+
+.tabs ul.nav li.selected, .tabs ul.nav li:hover {
+	background: #314f11; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxNGYxMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iIzM5NTgxMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iIzNiNWQxMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iIzUyN2MxMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzVlODkxNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iIzVmOGIxMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcyJSIgc3RvcC1jb2xvcj0iIzY3OTQxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iIzY3OTcxMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iIzZiOWIxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iIzZlOWYxMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzcyYTMxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iIzczYTUxMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3N2E5MTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #314f11 0%, #395812 16%, #3b5d11 19%, #527c10 49%, #5e8915 60%, #5f8b12 63%, #679413 72%, #679710 74%, #6b9b13 79%, #6e9f10 86%, #72a313 91%, #73a510 93%, #77a914 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#314f11), color-stop(16%,#395812), color-stop(19%,#3b5d11), color-stop(49%,#527c10), color-stop(60%,#5e8915), color-stop(63%,#5f8b12), color-stop(72%,#679413), color-stop(74%,#679710), color-stop(79%,#6b9b13), color-stop(86%,#6e9f10), color-stop(91%,#72a313), color-stop(93%,#73a510), color-stop(100%,#77a914)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #314f11 0%,#395812 16%,#3b5d11 19%,#527c10 49%,#5e8915 60%,#5f8b12 63%,#679413 72%,#679710 74%,#6b9b13 79%,#6e9f10 86%,#72a313 91%,#73a510 93%,#77a914 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #314f11 0%,#395812 16%,#3b5d11 19%,#527c10 49%,#5e8915 60%,#5f8b12 63%,#679413 72%,#679710 74%,#6b9b13 79%,#6e9f10 86%,#72a313 91%,#73a510 93%,#77a914 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #314f11 0%,#395812 16%,#3b5d11 19%,#527c10 49%,#5e8915 60%,#5f8b12 63%,#679413 72%,#679710 74%,#6b9b13 79%,#6e9f10 86%,#72a313 91%,#73a510 93%,#77a914 100%); /* IE10+ */
+background: linear-gradient(to bottom, #314f11 0%,#395812 16%,#3b5d11 19%,#527c10 49%,#5e8915 60%,#5f8b12 63%,#679413 72%,#679710 74%,#6b9b13 79%,#6e9f10 86%,#72a313 91%,#73a510 93%,#77a914 100%); /* W3C */
+	}
+
+.tabs ul.nav li.selected a, .tabs ul.nav li:hover a{color:#fff;}
+
+.box-tabs{background:#191919;border-top:1px solid #3c3c3c;padding:0 20px 17px 18px;}
+#box-tabs-1, #box-tabs-2{background: url(/media/images/bg-tabs-box-1.jpg) 0 0 repeat-x #191919;}
+.box-tabs a{font-size:12px;color:#6fa012;font-weight:bold;display:inline-block;margin:14px 0 0 1px;}
+.box-tabs span{background: url(/media/images/arrow-but-ban.png) 0 0 no-repeat;width:4px;height:7px;display:inline-block;
+margin:21px 12px 0 0;}
+.box-tabs a:hover{color:#fff;}
+.box-tabs p{margin:11px 0 0 0;line-height:18px;}
+.box-tabs{}

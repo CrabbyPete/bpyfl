@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block body_block %}
+		<!--==============================content================================-->
+             <div class="slider-tabs">
+	      <div id="slide">
+			 <div class="slider">
+				<ul class="items">
+				   <li><img src="/media/images/slide-1.jpg" alt="" /></li>
+				   <li><img src="/media/images/peewee.jpg" alt="" /></li>
+				   <li><img src="/media/images/nose.jpg" alt="" /></li>
+				</ul>
+			  </div>
+		   </div><!--the end of slider-->
+           <div class="tabs">
+              <ul class="nav">
+                   <li class="selected" id="first-li-tabs"><a href="#tab-1">Headlines</a></li>
+              </ul>
+              <div  id="tab-1" class="tab-content">
+                  <div class="box-tabs" id="box-tabs-1">
+                     <span></span><a href="#">Amet conse ctetur adipisicing</a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs">
+                     <span></span><a href="#">Exercitation ullamco </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs">
+                     <span></span><a href="#">Laboris xcepteur </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs last-bot-padd">
+                     <span></span><a href="#">Sint occaecat cupidatat </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <p><a href="#">See all <strong></strong></a></p>
+              </div>
+              <div  id="tab-2" class="tab-content">
+                  <div class="box-tabs"  id="box-tabs-2">
+                     <span></span><a href="#">Exercitation ullamco </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs">
+                     <span></span><a href="#">Laboris xcepteur </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs">
+                     <span></span><a href="#">Amet conse ctetur adipisicing</a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <div class="box-tabs last-bot-padd">
+                     <span></span><a href="#">Sint occaecat cupidatat </a>
+                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  </div>
+                  <p><a href="#">See all <strong></strong></a></p>
+              </div>
+           </div><!--the end of tabs-->
+           <div class="clear"></div>
+       </div>
+   </div><!--the end of head-->
+<section id="content" class="top">
+    <div class="wrapper">
+	  <div class="main-block-left">
+          <h2 class="padd-h2"><strong>LATEST</strong> TOPICS</h2>
+          {% for notice in notices %}
+          <div class="box">
+             <div class="wrapper-extra">
+               <!--   <img src="/media/images/page-img.jpg" alt="" class="fleft"> -->
+             <div class="extra-wrap">
+                 <strong>{{notice.header.Date}}</strong>
+                 <span>{{notice.header.Subject}}</span>
+                 <p class="line-h-18">{{notice.text}}</p>
+                 <!--  
+                 <em class="comment">12</em><a href="#" class="button">Read more</a>
+                 <div class="clear"></div>
+                 -->
+             </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!--  
+          <div class="box last-bot">
+             <div class="wrapper-extra">
+                <img src=/media/images/page-img-3.jpg" alt="" class="fleft">
+             <div class="extra-wrap">
+                 <strong>JUL 18, 2010</strong>
+                 <span>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</span>
+                 <p class="line-h-18">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                 <em class="comment">12</em><a href="#" class="button">Read more</a>
+                 <div class="clear"></div>
+             </div>
+            </div>
+            -->
+          </div>
+      </div>
+      <div class="clear"></div>
+    </div><!--the end of wrapper-->
+
+    {% endblock %}
