@@ -55,20 +55,23 @@
 <div class="main">
      <div class="head">
          <header>
-         <div class="over-header">
          <!--
+         <div class="over-header">
+
               <span>New User?</span> <a href="#">Register</a> <a href="#">Sign In</a> <a href="#">Help</a>
          -->
          </div>
            <div class="nav-logo">
                <div class="logo-search-form">
                      <h1><a href="index.html"></a></h1>
+                     <!-- 
                      <div class="div-search">
                         <form id="search" action="search.php" method="GET" accept-charset="utf-8">
                            <input type="text" name="s" />
                            <a onclick="document.getElementById('search').submit()"  class="search_button"></a>
                         </form>
 			        </div>
+			         -->
                     <div class="clear"></div>
                </div>
 	           <nav>
@@ -80,12 +83,13 @@
 						  <li><a href="http://www.bgcgarfield.org/content/garfield-junior-boilermakers">Garfield Football</a></li>
 	                      <li><a href="http://www.hawthornecubs.org">Hawthorne Football</a></li>
                           <li><a href="http://www.bgcnwnj.org/wbgc/travelprograms.asp?ProgID=14">Wayne Boys and Girls Club</a></li>
+                          <li><a href="http://www.waynepal.org/athletic-programs/football.html">Wayne PAL</a></li> 
                         </ul>
 	                  </li>
 					  <li id="id-5"><a href="{% url teams %}">TEAMS</a></li>
 					  <li id="id-6"><a href="{% url schedule %}">SCHEDULE/SCORES</a></li>
 	                  <li id="id-3"><a href="{% url standings%}">STANDINGS</a></li>
-	                  <li id="id-7"><a href="{% url officers %}">OFFICERS</a></li>
+	                  <li id="id-4"><a href="{% url officers %}">OFFICERS</a></li>
 	              </ul>
 	              <div class="clear"></div>
 	            </nav>

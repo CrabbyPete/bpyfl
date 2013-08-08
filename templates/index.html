@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body_block %}
 		<!--==============================content================================-->
-             <div class="slider-tabs">
+        <div class="slider-tabs">
 	      <div id="slide">
 			 <div class="slider">
 				<ul class="items">
@@ -16,10 +16,13 @@
                    <li class="selected" id="first-li-tabs"><a href="#tab-1">Headlines</a></li>
               </ul>
               <div  id="tab-1" class="tab-content">
-                  <div class="box-tabs" id="box-tabs-1">
-                     <span></span><a href="#">Amet conse ctetur adipisicing</a>
-                     <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
+                  {% for notice in notices|slice:":4" %}
+                  <div class="box-tabs" {% if forloop.counter0 == 1 %} id="box-tabs-1" {% endif %}>
+                     <span></span><a href="#{{notice.id}}">{{notice.Subject}}</a>
+                     <p>{{notice.text|truncatewords:15}}</p>
                   </div>
+                  {% endfor %}
+                  <!--
                   <div class="box-tabs">
                      <span></span><a href="#">Exercitation ullamco </a>
                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
@@ -32,8 +35,12 @@
                      <span></span><a href="#">Sint occaecat cupidatat </a>
                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</p>
                   </div>
+
                   <p><a href="#">See all <strong></strong></a></p>
+                  -->
+
               </div>
+              <!--
               <div  id="tab-2" class="tab-content">
                   <div class="box-tabs"  id="box-tabs-2">
                      <span></span><a href="#">Exercitation ullamco </a>
@@ -53,6 +60,7 @@
                   </div>
                   <p><a href="#">See all <strong></strong></a></p>
               </div>
+              -->
            </div><!--the end of tabs-->
            <div class="clear"></div>
        </div>
@@ -66,10 +74,10 @@
              <div class="wrapper-extra">
                <!--   <img src="/media/images/page-img.jpg" alt="" class="fleft"> -->
              <div class="extra-wrap">
-                 <strong>{{notice.header.Date}}</strong>
-                 <span>{{notice.header.Subject}}</span>
+                 <a name ={{notice.id}}><strong>{{notice.Date}}</strong></a>
+                 <span>{{notice.Subject}}</span>
                  <p class="line-h-18">{{notice.text}}</p>
-                 <!--  
+                 <!--
                  <em class="comment">12</em><a href="#" class="button">Read more</a>
                  <div class="clear"></div>
                  -->
@@ -77,7 +85,7 @@
             </div>
           </div>
           {% endfor %}
-          <!--  
+          <!--
           <div class="box last-bot">
              <div class="wrapper-extra">
                 <img src=/media/images/page-img-3.jpg" alt="" class="fleft">

@@ -1,0 +1,10 @@
+settings.py
+
+*.py[cod]
+
+.project
+.pydevproject
+.settings
+*.log
+
+settings.py
